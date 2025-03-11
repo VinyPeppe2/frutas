@@ -18,21 +18,21 @@ function imagemTela(textSearch) {
     let tFruits = document.getElementById('hTitle');
 
     let imagens = {
-        "abacate": "/imagens/abacate.jpg",
-        "acerola": "/imagens/acerola.jpg",
-        "banana": "/imagens/banana.jpeg",
-        "goiaba": "/imagens/goiaba.jpeg",
-        "graviola": "/imagens/graviola.jpeg",
-        "jabuticaba": "/imagens/jabuticaba.jpeg",
-        "laranja": "/imagens/laranja.jpeg",
-        "limao": "/imagens/limao.jpeg",
-        "mexerica": "/imagens/mexerica.jpg",
-        "morango": "/imagens/morango.jpeg",
-        "pinha": "/imagens/pinha.jpeg",
-        "pitanga": "/imagens/pitanga.jpeg",
-        "pitaya": "/imagens/pitaya.jpeg",
-        "roma": "/imagens/roma.jpg",
-        "uva": "/imagens/uva.jpeg"
+        "abacate": "/frutas/imagens/abacate.jpg",
+        "acerola": "/frutas/imagens/acerola.jpg",
+        "banana": "/frutas/imagens/banana.jpeg",
+        "goiaba": "/frutas/imagens/goiaba.jpeg",
+        "graviola": "/frutas/imagens/graviola.jpeg",
+        "jabuticaba": "/frutas/imagens/jabuticaba.jpeg",
+        "laranja": "/frutas/imagens/laranja.jpeg",
+        "limao": "/frutas/imagens/limao.jpeg",
+        "mexerica": "/frutas/frutas/imagens/mexerica.jpg",
+        "morango": "/frutas/imagens/morango.jpeg",
+        "pinha": "/frutas/imagens/pinha.jpeg",
+        "pitanga": "/frutas/imagens/pitanga.jpeg",
+        "pitaya": "/frutas/imagens/pitaya.jpeg",
+        "roma": "/frutas/imagens/roma.jpg",
+        "uva": "/frutas/imagens/uva.jpeg"
     };
     
     if(imagens[textSearch]){
@@ -40,7 +40,7 @@ function imagemTela(textSearch) {
         tFruits.innerHTML = textSearch.toUpperCase()
     }
     else{
-        img.src = "/imagens/frutas.jpeg";
+        img.src = "/frutas/imagens/frutas.jpeg";
         tFruits.innerHTML = "Search List";
     }
 }
@@ -84,6 +84,6 @@ function limpaTela(){
     let imgTela = document.getElementById('imgSelect');
 
     titleTela.innerHTML = 'Search List';
-    imgTela.src = '/imagens/frutas.jpeg'
+    imgTela.src = '/frutas/imagens/frutas.jpeg'
 }
 
